@@ -9,7 +9,10 @@ gcloud projects get-iam-policy <PROJECT_ID> --flatten="bindings[].members" --fil
 
 
 
-CLI: 
+```
 gcloud scc findings list \
+    --project=YOUR_PROJECT_ID \
     --filter="category=\"USER_MANAGED_SERVICE_ACCOUNT_KEY\" AND findingClass=\"MISCONFIGURATION\"" \
     --format="table(name, category, findingClass, state, eventTime)"
+
+```
