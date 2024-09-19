@@ -16,3 +16,7 @@ gcloud scc findings list \
     --format="table(name, category, findingClass, state, eventTime)"
 
 ```
+
+
+
+gcloud compute firewall-rules list --filter='INGRESS=True AND sourceRanges:0.0.0.0/0' --format='table(name, network, sourceRanges, allowed[])'
